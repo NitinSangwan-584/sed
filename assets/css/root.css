@@ -7,8 +7,10 @@
     --text-md: 28px;
     --text-lg: 32px;
     --text-xl: 60px;
-    --color-white:#FCFCFC;
+    --color-white: #FCFCFC;
+    --color-white-2: #FBFBFB;
     --color-black: #010101;
+    --color-black-02: #020202;
     --color-black-2: #43434DCC;
     --color-voilet: #43434D;
     --color-orange: #FF6D41;
@@ -51,12 +53,20 @@
 .color-black {
     color: var(--color-black);
 }
+
 .color-white {
     color: var(--color-white);
 }
 
+.color-white-2 {
+    background-color: var(--color-white-2);
+}
+
 .color-black-2 {
     color: var(--color-black-2);
+}
+.color-black-02 {
+    color: var(--color-black-02);
 }
 
 .color-voilet {
