@@ -1,11 +1,8 @@
 :root {
     --font-family-primary: "Poppins", sans-serif;
-    --font-family-secondary: "Poppins", serif;
-    --font-family-3: "Inter", serif;
-    --text-sm: 16px;
-    --text-base: 20px;
+    --font-family-secondary: "Nunito", sans-serif;
     --text-md: 28px;
-    --text-lg: 32px;
+    --text-lg: 48px;
     --text-xl: 60px;
     --color-white: #FCFCFC;
     --color-white-2: #FBFBFB;
@@ -15,7 +12,6 @@
     --color-voilet: #43434D;
     --color-orange: #FF6D41;
     --color-blue: #294B78;
-    --bg-light-white: #F5F5F5;
 }
 
 .font-family-primary {
@@ -24,18 +20,6 @@
 
 .font-family-secondary {
     font-family: var(--font-family-secondary);
-}
-
-.font-family-3 {
-    font-family: var(--font-family-3);
-}
-
-.text-sm {
-    font-size: var(--text-sm);
-}
-
-.text-base {
-    font-size: var(--text-base);
 }
 
 .text-md {
@@ -65,6 +49,7 @@
 .color-black-2 {
     color: var(--color-black-2);
 }
+
 .color-black-02 {
     color: var(--color-black-02);
 }

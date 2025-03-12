@@ -6,21 +6,41 @@ const navbarbtn = () => {
     document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
-window.addEventListener("scroll", function () {
-    let navbar = document.querySelector(".nav-shadow");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
 
 
 //------------------------------------------------slider---------------------------------------------
-$('.slider-content').slick({
-    infinite: true,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
+$(document).ready(function () {
+    $('.slider-content').slick({
+        infinite: true,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Change slide every 2 seconds
+        slidesToShow: 7, // Default: 3 slides on large screens
+        slidesToScroll: 1, // Scroll 1 logo at a time
+        dots: false, // Remove dots
+        arrows: false, // Hide prev/next arrows
+        responsive: [
+            {
+                breakpoint: 991.98, // Large screens (lg)
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 767.98, // Medium screens (md)
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 575.98, // Small screens (sm)
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
 });
+
 //----------------------------------------------back to top------------------------------------------------
 const mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
@@ -28,7 +48,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         mybutton.style.display = "block"; // Show the button
     } else {
         mybutton.style.display = "none";
