@@ -1,0 +1,98 @@
+:root {
+    --font-family-primary: "Poppins", sans-serif;
+    --font-family-secondary: "Poppins", serif;
+    --font-family-3: "Inter", serif;
+    --text-sm: 16px;
+    --text-base: 20px;
+    --text-md: 28px;
+    --text-lg: 32px;
+    --text-xl: 60px;
+    --color-white:#FCFCFC;
+    --color-black: #010101;
+    --color-black-2: #43434DCC;
+    --color-voilet: #43434D;
+    --color-orange: #FF6D41;
+    --color-blue: #294B78;
+    --bg-light-white: #F5F5F5;
+}
+
+.font-family-primary {
+    font-family: var(--font-family-primary);
+}
+
+.font-family-secondary {
+    font-family: var(--font-family-secondary);
+}
+
+.font-family-3 {
+    font-family: var(--font-family-3);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+.color-white {
+    color: var(--color-white);
+}
+
+.color-black-2 {
+    color: var(--color-black-2);
+}
+
+.color-voilet {
+    color: var(--color-voilet);
+}
+
+.color-orange {
+    color: var(--color-orange);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.bg-black-2 {
+    background: var(--color-black-2);
+}
+
+.bg-blue {
+    background: var(--color-blue);
+}
+
+@media (max-width:991.98px) {
+    :root {
+        --text-xl: 40px;
+    }
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --text-xl: 32px;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --text-xl: 24px;
+    }
+}

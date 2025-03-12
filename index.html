@@ -17,3 +17,93 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
+<body>
+    <!-- header -->
+    <header class="min-vh-100  d-flex flex-column justify-content-center bg-img ">
+        <nav class="py-16 w-100 mx-auto shadow-blur position-fixed top-0 z-3">
+            <div class="container bg-white navbox  max-w-1140">
+                <div class="d-flex align-items-center  justify-content-between w-100">
+                    <a href="https://passage.com/en/" target="_blank">
+                        <img src="./assets/img/svg/page-logo.svg" class="page-logo img-fluid" alt="page-logo">
+                    </a>
+                    <ul id="name"
+                        class="d-flex mb-0 align-items-center gap-32 nav-link list-unstyled justify-content-center">
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-6 lh-16 color-black"
+                                href="#">Home</a>
+                        </li>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-6 lh-16 color-black"
+                                href="#">About us</a></li>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-6 lh-16 color-black"
+                                href="#">Why SED</a>
+                        </li>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-6 lh-16 color-black"
+                                href="#">UB Program</a>
+                        </li>
+                        <li><a class="text-decoration-none navbar-link font-family-primary fw-normal fs-6 lh-16 color-black"
+                                href="#">Affiliate & Influencer Program</a>
+                        </li>
+                        <button
+                            class="font-family-primary z-2 bg-blue py-14 px-16 ml-16 fw-semibold fs-6  btn text-white"
+                            type="button">Join Now</button>
+                    </ul>
+                    <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer">
+                        <span class="menu-lines" id="rotates"></span>
+                        <span class="menu-lines" id="transparent"></span>
+                        <span class="menu-lines" id="rotates2"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="d-flex flex-grow-1 justify-content-center align-items-center position-relative py-5">
+            <div class="container-fluid max-w-1140">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <p class="font-family-primary fw-medium fs-6 lh-21 color-orange mb-3">SED APP</p>
+                        <h1 class="font-family-primary fw-medium text-xl lh19 color-white mb-4 max-w-570">
+                            Where Innovation Fuels Opportunity
+                        </h1>
+                        <p class="font-family-primary fw-normal fs-6 lh-24 color-white mb-4 max-w-570">
+                            An ecosystem that elevates businesses, empowers individuals, and transforms how we connect,
+                            shop, earn, and transact globally.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                            <a href="https://www.apple.com/in/app-store/" target="_blank">
+                                <img src="./assets/img/svg/app-store.svg" alt="app-store">
+                            </a>
+                            <a href="https://play.google.com/store/games?hl=en" target="_blank">
+                                <img src="./assets/img/svg/google-play.svg" alt="google-play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 position-relative">
+                        <div class="bg-white box box-1 position-absolute">
+                            <img src="./assets/img/svg/grow-up.svg" alt="grow-up">
+                            <p class="font-family-secondary fs-6 fw-medium color-black-2 mt-2 mb-0">Total Referrals</p>
+                            <p class="font-family-secondary fw-bold color-voilet text-md">103</p>
+                        </div>
+                        <div class="bg-white box box-2 position-absolute">
+                            <img src="./assets/img/svg/grow-down.svg" alt="grow-down">
+                            <p class="font-family-secondary fs-6 fw-medium color-black-2 mt-2 mb-0">Engagement Rate</p>
+                            <p class="font-family-secondary fw-bold color-voilet text-md">35%</p>
+                        </div>
+                        <img class="z-3" src="./assets/img/png/lady.png" alt="lady">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <button class="fs-5 position-fixed myBtn" onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
