@@ -4,7 +4,7 @@
 
 .bg-img {
     background-image: url(../img/png/bg-img.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -25,8 +25,8 @@
     line-height: 150%;
 }
 
-.max-w-1140 {
-    max-width: 1140px;
+.max-w-1240 {
+    max-width: 1240px;
 }
 
 .max-w-570 {
@@ -71,14 +71,11 @@
 
 .lady {
     width: 100%;
-    max-width: 426px;
-    /* Ensures it doesn't get larger than 426px */
+    max-width: 400px;
     height: auto;
-    /* Maintains aspect ratio */
     display: block;
-    /* Removes unwanted extra space below images */
+    /* margin-left: 10%; */
 }
-
 
 .navbar-link {
     position: relative;
@@ -134,13 +131,13 @@
 }
 
 .box-1 {
-    top: 15%;
-    right: 1%;
+    top: 18%;
+    right: 2%;
 }
 
 .box-2 {
-    bottom: 15%;
-    left: 0%;
+    bottom:5%;
+    left: -5%;
 }
 
 .main-heading-box {
@@ -379,12 +376,12 @@
     }
 
     .box-1 {
-        top: 77%;
+        top: 70%;
         right: 0%;
     }
 
     .box-2 {
-        bottom: 0%;
+        bottom: 10%;
         left: 0%;
     }
 }
