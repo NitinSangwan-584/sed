@@ -1,6 +1,7 @@
 :root {
     --font-family-primary: "Poppins", sans-serif;
     --font-family-secondary: "Nunito", sans-serif;
+    --font-family-3: "Outfit", sans-serif;
     --text-md: 28px;
     --text-lg: 48px;
     --text-xl: 60px;
@@ -20,6 +21,10 @@
 
 .font-family-secondary {
     font-family: var(--font-family-secondary);
+}
+
+.font-family-3 {
+    font-family: var(--font-family-3);
 }
 
 .text-md {

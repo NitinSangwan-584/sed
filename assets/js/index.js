@@ -9,36 +9,39 @@ const navbarbtn = () => {
 
 
 //------------------------------------------------slider---------------------------------------------
-$(document).ready(function () {
-    $('.slider-content').slick({
-        infinite: true,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 2000, // Change slide every 2 seconds
-        slidesToShow: 7, // Default: 3 slides on large screens
-        slidesToScroll: 1, // Scroll 1 logo at a time
-        dots: false, // Remove dots
-        arrows: false, // Hide prev/next arrows
-        responsive: [
-            {
-                breakpoint: 991.98, // Large screens (lg)
-                settings: {
-                    slidesToShow: 6
-                }
-            },
-            {
-                breakpoint: 767.98, // Medium screens (md)
-                settings: {
-                    slidesToShow: 5
-                }
-            },
-            {
-                breakpoint: 575.98, // Small screens (sm)
-                settings: {
-                    slidesToShow: 2
-                }
+$('.slider-content').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 700,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
             }
-        ]
-    });
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 //----------------------------------------------back to top------------------------------------------------
