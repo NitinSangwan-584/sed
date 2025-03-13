@@ -88,11 +88,6 @@
 @media (max-width:767.98px) {
     :root {
         --text-xl: 32px;
-    }
-}
-
-@media (max-width:575.98px) {
-    :root {
-        --text-xl: 24px;
+        --text-lg: 32px;
     }
 }

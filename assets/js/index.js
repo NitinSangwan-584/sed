@@ -6,8 +6,6 @@ const navbarbtn = () => {
     document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
-
-
 //------------------------------------------------slider---------------------------------------------
 $('.slider-content').slick({
     dots: false,

@@ -20,9 +20,10 @@
 
 <body>
     <!-- header -->
-    <header class="min-vh-100  d-flex flex-column justify-content-center bg-img ">
-        <nav class="py-16 w-100 mx-auto shadow-blur position-fixed top-0 z-3">
-            <div class="container bg-white navbox  max-w-1240">
+    <header class="min-h-818  flex-column bg-img position-relative">
+        <img class="position-absolute w-100 max-w-1240 h-100" src="./assets/img/png/bg-layer.png" alt="bg-layer">
+        <nav class="w-100 py-4 z-3">
+            <div class="container bg-white navbox max-w-1240">
                 <div class="d-flex align-items-center  justify-content-between w-100">
                     <a href="#" target="_blank">
                         <img src="./assets/img/svg/page-logo.svg" class="page-logo img-fluid" alt="page-logo">
@@ -47,8 +48,7 @@
                             class="font-family-primary d-lg-none z-2 bg-blue fw-semibold fs-6 lh-100p btn text-white"
                             type="button">Join Now</button>
                     </ul>
-                    <button
-                        class="font-family-primary z-2 btn-2 bg-blue  lh-100p fw-semibold fs-6  btn text-white"
+                    <button class="font-family-primary z-2 btn-2 bg-blue  lh-100p fw-semibold fs-6  btn text-white"
                         type="button">Join Now</button>
                     <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer">
                         <span class="menu-lines" id="rotates"></span>
@@ -58,10 +58,9 @@
                 </div>
             </div>
         </nav>
-        <!-- <section class="d-flex flex-grow-1 justify-content-center align-items-center position-relative my-4"> -->
         <div class="container max-w-1240">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6 text-center text-lg-start">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center z-2 pt-102 text-lg-start">
                     <p class="font-family-primary fw-medium fs-6 lh-21 lh-135p color-orange mb-3">SED APP</p>
                     <h1 class="font-family-primary fw-medium text-xl lh-120p color-white mb-4 max-w-570">
                         Where Innovation Fuels Opportunity
@@ -80,7 +79,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 position-relative">
-                    <!-- <img class="position-absolute overflow-hidden w-100" src="./assets/img/png/lady-layer.png" alt="layer"> -->
+                    <div class="position-relative mb-4 d-flex justify-content-center">
+                        <img class="position-absolute max-w-452 w-100" src="./assets/img/png/lady-layer.png"
+                            alt="layer">
+                        <img class="lady position-relative z-1" src="./assets/img/png/lady.png" alt="lady">
+                    </div>
                     <div class="bg-white box box-1 z-2 position-absolute">
                         <img class="w-100" src="./assets/img/svg/grow-up.svg" alt="grow-up">
                         <p class="font-family-secondary fs-6 fw-medium color-black-2 lh-100p mt-2 mb-0">Total
@@ -93,7 +96,6 @@
                             Rate</p>
                         <p class="font-family-secondary fw-bold color-voilet text-md lh-100p">35%</p>
                     </div>
-                    <img class="lady position-relative z-1" src="./assets/img/png/lady.png" alt="lady">
                 </div>
             </div>
         </div>
@@ -116,128 +118,134 @@
             <div class="slider-img"><img src="./assets/img/svg/logo-3.svg" alt="icon" class="logo"></div>
             <div class="slider-img"><img src="./assets/img/svg/logo-4.svg" alt="icon" class="logo"></div>
         </div>
-
-        </div>
     </section>
     <!-- download section  -->
     <section class="d-flex justify-content-center align-items-center">
-        <div class="container   text-center mb-120">
+        <div class="container text-center mb-120">
             <div class="blue-box section-bg max-w-1320">
-            <div class="d-flex flex-column align-items-center">
-                <p class="font-family-primary fw-medium fs-6 color-white lh-135p mb-8 mt-80">DOWNLOAD SED APP</p>
-                <h2 class="font-family-primary text-lg color-white lh-120p fw-semibold max-w-598 mb-16">Experience the
-                    Future of
-                    Digital Innovation</h2>
-                <p class="font-family-primary fw-medium fs-5 lh-120p color-white mb-40">Secure. Fast. Global.</p>
-                <div class="d-flex gap-3 flex-wrap justify-content-center mb-80">
-                    <a href="https://www.apple.com/in/app-store/" target="_blank">
-                        <img src="./assets/img/svg/app-store.svg" alt="app-store" class="w-100 store">
-                    </a>
-                    <a href="https://play.google.com/store/games?hl=en" target="_blank">
-                        <img src="./assets/img/svg/google-play.svg" alt="google-play" class="w-100 store">
-                    </a>
+                <div class="d-flex flex-column align-items-center">
+                    <p class="font-family-primary fw-medium fs-6 color-white lh-135p mb-8 mt-80">DOWNLOAD SED APP</p>
+                    <h2 class="font-family-primary text-lg color-white lh-120p fw-semibold max-w-598 mb-16">Experience
+                        the
+                        Future of
+                        Digital Innovation</h2>
+                    <p class="font-family-primary fw-medium fs-5 lh-120p color-white mb-40">Secure. Fast. Global.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center mb-80">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank">
+                            <img src="./assets/img/svg/app-store.svg" alt="app-store" class="w-100 store">
+                        </a>
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank">
+                            <img src="./assets/img/svg/google-play.svg" alt="google-play" class="w-100 store">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- footer -->
     <footer class="color-white-2 mb-0">
-        <div class="container max-w-1140">
+        <div class="container max-w-1140 pt-60">
             <div class="row">
-                <div class="col-lg-5 col-md-6 col-12 text-md-start text-center">
-                    <div class="pt-60">
-                        <a href="#" target="_blank">
-                            <img src="./assets/img/svg/page-logo.svg" class="page-logo" alt="page-logo">
-                        </a>
-                        <p class="font-family-primary fw-normal fs-6 lh-150p color-black opacity-70 mt-16">
-                            SED APP is a decentralized, AI-powered ecosystem driving growth, seamless commerce, and
-                            global connectivity for individuals and businesses.
-                        </p>
-                        <h3 class="font-family-primary fw-normal fs-6 color-black-02 lh-100p mt-24 mb-18">Follow Us On
-                        </h3>
-                        <div class="d-flex gap-3 justify-content-md-start justify-content-center">
-                            <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
-                                <a class="text-decoration-none d-flex justify-content-center align-items-center"
-                                    href="https://in.linkedin.com/" target="_blank">
-                                    <img src="./assets/img/svg/in.svg" alt="linkedin">
-                                </a>
-                            </div>
-                            <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
-                                <a class="text-decoration-none d-flex justify-content-center align-items-center"
-                                    href="https://instagram.com/" target="_blank">
-                                    <img src="./assets/img/svg/insta.svg" alt="insta">
-                                </a>
-                            </div>
-                            <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
-                                <a class="text-decoration-none d-flex justify-content-center align-items-center"
-                                    href="https://facebook.com/" target="_blank">
-                                    <img src="./assets/img/svg/fb.svg" alt="fb">
-                                </a>
-                            </div>
+                <div class="col-lg-5 col-12 mb-5 mb-lg-0">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/svg/page-logo.svg" class="page-logo" alt="page-logo">
+                    </a>
+                    <p class="font-family-primary fw-normal fs-6 lh-150p color-black opacity-70 mt-16">
+                        SED APP is a decentralized, AI-powered ecosystem driving growth, seamless commerce, and
+                        global connectivity for individuals and businesses.
+                    </p>
+                    <h3 class="font-family-primary fw-normal fs-6 color-black-02 lh-100p mt-24 mb-18">Follow Us On
+                    </h3>
+                    <div class="d-flex gap-3">
+                        <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
+                            <a class="text-decoration-none d-flex justify-content-center align-items-center"
+                                href="https://in.linkedin.com/" target="_blank">
+                                <img src="./assets/img/svg/in.svg" alt="linkedin">
+                            </a>
+                        </div>
+                        <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
+                            <a class="text-decoration-none d-flex justify-content-center align-items-center"
+                                href="https://instagram.com/" target="_blank">
+                                <img src="./assets/img/svg/insta.svg" alt="insta">
+                            </a>
+                        </div>
+                        <div class="footer-tags social-icon d-flex justify-content-center align-items-center">
+                            <a class="text-decoration-none d-flex justify-content-center align-items-center"
+                                href="https://facebook.com/" target="_blank">
+                                <img src="./assets/img/svg/fb.svg" alt="fb">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-6">
-                    <ul class="list-unstyled pt-60">
-                        <li class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02">Quick
-                            Links
-                        </li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Home</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">About Us</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Why SED</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">UB Program</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Affi. & Influencer Program</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                    <ul class="list-unstyled pt-60">
-                        <li class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02">
-                            Privacy
-                            Policy</li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Terms & Conditions</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">User Guidelines</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Cookie Policy</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Case Studies</a></li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-12 col-12 text-md-start text-center">
-                    <ul class="list-unstyled pt-60">
-                        <li class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02">Send
-                            Us An
-                            E-mail</li>
-                        <li class="mt-14"><a
-                                class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">info@sed.com</a></li>
-                        <li class="mt-14"
-                            class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02" href="#">
-                            Address</li>
-                        <li class="mt-14">
-                            <a class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
-                                href="#">123 Innovation Street, <br>Suite 456 <br>Tech City, TX
-                                78901, USA</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-7 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-6 mb-4 mb-lg-0">
+                            <ul class="list-unstyled">
+                                <li
+                                    class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02">
+                                    Quick
+                                    Links
+                                </li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Home</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">About Us</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Why SED</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">UB Program</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Affi. & Influencer Program</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <ul class="list-unstyled">
+                                <li
+                                    class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02">
+                                    Privacy
+                                    Policy</li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Terms & Conditions</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">User Guidelines</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Cookie Policy</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Case Studies</a></li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <ul class="list-unstyled">
+                                <li class="text-decoration-none font-family-3 fw-normal fs-6 lh-100p color-black-02">
+                                    Send
+                                    Us An
+                                    E-mail</li>
+                                <li class="mt-14"><a
+                                        class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">info@sed.com</a></li>
+                                <li
+                                    class="text-decoration-none mt-14 font-family-3 fw-normal fs-6 lh-100p color-black-02">
+                                    Address</li>
+                                <li class="mt-14">
+                                    <a class="text-decoration-none font-family-primary fw-normal fs-6 lh-100p color-black-02 opacity-70 footer-links"
+                                        href="#">123 Innovation Street, <br>Suite 456 <br>Tech City, TX
+                                        78901, USA</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
