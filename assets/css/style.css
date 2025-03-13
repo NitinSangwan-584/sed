@@ -165,6 +165,9 @@
 .slider-img {
     filter: invert(1);
 }
+.slider-img:hover {
+    filter: invert(0);
+}
 
 .menu-lines {
     width: 30px;
